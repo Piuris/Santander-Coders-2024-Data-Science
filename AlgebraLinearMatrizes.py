@@ -1,0 +1,33 @@
+import numpy as np
+
+matriz = np.array([[1, 1, -3], [2, 1, 3], [2, 0, -1]])
+matrizA = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
+matrizB = matrizA.transpose()
+print(matriz)
+matriz_transposta = matriz.transpose()
+matriz_T = matriz.T
+print(matriz_T)
+print(matriz_transposta)
+matrizC = matrizA + matrizB
+print(matrizC)
+matrizD = matrizA - matrizB
+print(matrizD)
+matrizE = np.dot(matrizA, matrizB)
+print(matrizE)
+det = np.linalg.det(matriz)
+print(det)
+matriz_inversa = np.linalg.inv(matriz)
+provareal = np.dot(matriz, matriz_inversa)
+print(matriz_inversa)
+print(provareal)
+i = np.identity(3)
+print(i)
+Identidade = np.eye(3)
+print(Identidade)
+matrizA = np.array([[1, 2, 3], [2, 3, 3], [1, 2, 0]])
+matrizB = np.array([1, -3, 6])
+A_inv = np.linalg.inv(matrizA)
+x = np.dot(A_inv, matrizB)
+print(x)
+x_solve = np.linalg.solve(matrizA, matrizB)
+print(x_solve)
